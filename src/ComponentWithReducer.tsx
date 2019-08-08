@@ -1,5 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './App.css';
+
+enum Action {
+  INCREMENT = 'INCREMENT',
+  DECREMENT = 'DECREMENT'
+}
 
 export const ComponentWithReducer: React.FunctionComponent<{}> = () => {
   const [state, dispatch] = React.useReducer((state: number, action: Action) => {
@@ -21,8 +26,3 @@ export const ComponentWithReducer: React.FunctionComponent<{}> = () => {
     </div>
   );
 };
-
-enum Action {
-  INCREMENT = 'INCREMENT',
-  DECREMENT = 'DECREMENT'
-}

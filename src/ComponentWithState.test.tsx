@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentWithState } from "./ComponentWithState";
-import { cleanup, fireEvent, render, RenderResult } from "react-testing-library";
+import { cleanup, fireEvent, render, RenderResult } from "@testing-library/react";
 
 describe('ComponentWithState', () => {
   let app: RenderResult;
